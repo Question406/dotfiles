@@ -22,6 +22,9 @@
     # git stuff
     ~/.gitconfig: .gitconfig
 
+    # ipython stuff
+    ~/.ipython/profile_default: ipython/profile_default
+
 
 - shell:
    - [vim +PlugInstall +qall, Installing vim plugs]
