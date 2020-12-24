@@ -14,7 +14,7 @@
     ~/.vimrc: .vimrc
 
     # zsh stuff
-    ~/customs/zshcustom: zsh/custom
+    ~/.customs/zshcustom: zsh/custom
     ~/.oh-my-zsh: zsh/ohmyzsh
     ~/.zshrc: .zshrc
     ~/.p10k.zsh: zsh/.p10k.zsh

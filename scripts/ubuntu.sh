@@ -20,9 +20,9 @@ install_conda(){
         #read -p "install conda or not(y/n)" 
         echo "installing conda"
         if [[ ! -f Miniconda-latest-Linux-x86_64.sh ]]; then
-            wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda-latest-Linux-x86_64.sh 
+            wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
         fi 
-        bash Miniconda-latest-Linux-x86_64.sh
+        bash Miniconda3-latest-Linux-x86_64.sh
         which conda
 
     else
@@ -33,4 +33,4 @@ install_conda(){
 }
 
 install_zsh
-#install_conda
+install_conda

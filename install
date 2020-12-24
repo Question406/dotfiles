@@ -11,10 +11,10 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "${BASEDIR}"
 
 # install script
-#UNAME=$(uname | tr "[:upper:]" "[:lower:]")
-#if [ "$UNAME" == "linux" ]; then
-#    bash ./scripts/ubuntu.sh
-#fi
+UNAME=$(uname | tr "[:upper:]" "[:lower:]")
+if [ "$UNAME" == "linux" ]; then
+    bash ./scripts/ubuntu.sh
+fi
 
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
