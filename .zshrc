@@ -63,7 +63,7 @@ export UPDATE_ZSH_DAYS=30
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-#ZSH_CUSTOM=
+ZSH_CUSTOM=$USR"customs/zshcustom"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -99,10 +99,10 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # aliases
-source $ZSH/custom/myown/aliases
+source $ZSH_CUSTOM/myown/aliases
 
 # shell funcs
-source $ZSH/custom/myown/funcs.zsh
+source $ZSH_CUSTOM/myown/funcs.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
