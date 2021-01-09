@@ -8,6 +8,12 @@ let &t_SI = "\<Esc>[6 q"
 let &t_SR = "\<Esc>[4 q"
 let &t_EI = "\<Esc>[2 q""]"
 
+" vertical line indent
+let g:indentLine_char='¦'
+let g:indentLine_enabled = 1
+let g:indentLine_defaultGroup = 'SpecialKey'
+
+" NERDTree toggler
 map <C-n> : NERDTreeToggle<CR>
 
 call plug#begin('~/.vim/plugged')
@@ -23,5 +29,9 @@ Plug 'vim-airline/vim-airline-themes'
 
 " underline word under cursor
 Plug 'itchyny/vim-cursorword'
+
+" indent line 
+Plug 'Yggdroot/indentLine'
+
 call plug#end()
 
