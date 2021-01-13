@@ -22,6 +22,9 @@
     # git stuff
     ~/.gitconfig: .gitconfig
 
+    # tmux stuff
+    ~/.tmux.conf : .tmux.conf
+
     # ipython stuff
     ~/.ipython/profile_default: ipython/profile_default
 
