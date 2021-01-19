@@ -13,6 +13,9 @@
     ~/.vim/autoload/plug.vim: vim/vim-plug/plug.vim    
     ~/.vimrc: .vimrc
 
+    # bash stuff
+    ~/.bashrc: .bashrc
+
     # zsh stuff
     ~/.customs/zshcustom: zsh/custom
     ~/.oh-my-zsh: zsh/ohmyzsh
