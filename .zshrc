@@ -102,6 +102,10 @@ source $ZSH_CUSTOM/myown/aliases
 # shell funcs
 source $ZSH_CUSTOM/myown/funcs.zsh
 
+# no dumplicate history
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_EXPIRE_DUPS_FIRST
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

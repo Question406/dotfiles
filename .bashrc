@@ -1,3 +1,6 @@
+# no duplicate in history
+export HISTCONTROL=ignoredups:erasedups
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
