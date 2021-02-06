@@ -1,6 +1,27 @@
+# oh-my-bash setting variables
+export OSH=$HOME/.oh-my-bash
+OSH_THEME="axin"
+
+completions=(
+    git
+    composer
+    ssh
+)
+
+aliases=(
+    general
+)
+
+plugins=(
+    git
+    bashmarks
+)
+
+# oh-my-bash take effect
+source $OSH/oh-my-bash.sh
+
 # no duplicate in history
 export HISTCONTROL=ignoredups:erasedups
-
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
