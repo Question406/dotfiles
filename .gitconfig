@@ -4,3 +4,7 @@
 
 [core]
     editor = vim
+
+[credential]
+    # temporarily (2 hrs) remember remote user
+	helper= cache --timeout 7200
