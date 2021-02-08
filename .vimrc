@@ -4,6 +4,7 @@ set ts=4 "inline = 4
 set shiftwidth=4 "On pressing tab, insert 4 spaces
 set expandtab "tab as 4 spaces
 set cursorline "highlight current line number
+"set encoding=UTF-8 "use utf-8 as default encoding
 "different cursor under different mode
 let &t_SI = "\<Esc>[6 q"
 let &t_SR = "\<Esc>[4 q"
@@ -24,8 +25,9 @@ Plug 'jiangmiao/auto-pairs'
 
 " side view directory
 Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons' "file type icons
 
-" bottom stattranspus bar
+"bottom stattranspus bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
