@@ -4,7 +4,9 @@ set ts=4 "inline = 4
 set shiftwidth=4 "On pressing tab, insert 4 spaces
 set expandtab "tab as 4 spaces
 set cursorline "highlight current line number
-"set encoding=UTF-8 "use utf-8 as default encoding
+set encoding=UTF-8 "use utf-8 as default encoding
+language en_US.utf8 " default language setting in english
+
 "different cursor under different mode
 let &t_SI = "\<Esc>[6 q"
 let &t_SR = "\<Esc>[4 q"
@@ -15,6 +17,9 @@ let &t_EI = "\<Esc>[2 q""]"
 let g:indentLine_char='¦'
 let g:indentLine_enabled = 1
 let g:indentLine_defaultGroup = 'SpecialKey'
+
+" default language setting in english
+language en_US.utf8
 
 " let airline mode show only first character
 " n for normal
