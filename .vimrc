@@ -1,5 +1,5 @@
 set number "line number
-"set relativenumber "set relative linenumber 
+"set relativenumber "set relative linenumber
 set ts=4 "inline = 4
 set shiftwidth=4 "On pressing tab, insert 4 spaces
 set expandtab "tab as 4 spaces
@@ -16,7 +16,22 @@ let g:indentLine_char='¦'
 let g:indentLine_enabled = 1
 let g:indentLine_defaultGroup = 'SpecialKey'
 
-" NERDTree toggler
+" let airline mode show only first character
+" n for normal
+" i for insert
+" v for visual
+" V for visual-line
+" ^V for visual-block
+" there're other modes, but i don't understand what they are now
+let g:airline_mode_map = {
+    \ 'n' : 'N',
+    \ 'i' : 'I',
+    \ 'v' : 'V',
+    \ 'V' : 'V-L',
+    \ '' : 'V-B',
+    \ }
+
+" NERDTree toggler, ctrl+n
 map <C-n> : NERDTreeToggle<CR>
 
 call plug#begin('~/.vim/plugged')
@@ -25,16 +40,19 @@ Plug 'jiangmiao/auto-pairs'
 
 " side view directory
 Plug 'preservim/nerdtree'
-Plug 'ryanoasis/vim-devicons' "file type icons
+Plug 'ryanoasis/vim-devicons' " file type icons
 
-"bottom stattranspus bar
+" vim git plug
+Plug 'tpope/vim-fugitive'
+
+" bottom stattranspus bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " underline word under cursor
 Plug 'itchyny/vim-cursorword'
 
-" indent line 
+" indent line
 Plug 'Yggdroot/indentLine'
 
 " better commeent
@@ -49,15 +67,15 @@ Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
-
 filetype plugin on
 
 " onedark theme
 syntax on
 colorscheme onedark
 
+" MUST set after colorscheme to overide colorscheme settings
 " line number background to make it clear
 hi LineNr guibg=NONE ctermbg=245
 
-" let vim be transparent as terminal 
+" let vim be transparent as terminal
 hi Normal guibg=NONE ctermbg=NONE
