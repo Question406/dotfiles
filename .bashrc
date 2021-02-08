@@ -1,6 +1,7 @@
 # oh-my-bash setting variables
 export OSH=$HOME/.oh-my-bash
 OSH_THEME="axin"
+DISABLE_AUTO_UPDATE="true"
 
 completions=(
     git
@@ -17,8 +18,6 @@ plugins=(
     bashmarks
 )
 
-# oh-my-bash take effect
-source $OSH/oh-my-bash.sh
 
 # no duplicate in history
 export HISTCONTROL=ignoredups:erasedups
@@ -38,3 +37,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# oh-my-bash take effect
+source $OSH/oh-my-bash.sh
