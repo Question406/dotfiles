@@ -30,7 +30,7 @@
     ~/.tmux.conf : .tmux.conf
 
     # ipython stuff
-    ~/.ipython/profile_default: ipython/profile_default
+    ~/.ipython/profile_default/ipython_config.py: ipython/ipython_config.py
 
 
 - shell:

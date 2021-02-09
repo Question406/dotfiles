@@ -10,10 +10,30 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 cd "${BASEDIR}"
 
+getPlatform(){
+    if grep -Eqii "Manjaro" /etc/issue || grep -Eq "Manjaro" /etc/*-release; then
+        PLATFORM='Manjaro'
+    elif grep -Eqii "Ubuntu" /etc/issue || grep -Eq "Ubuntu" /etc/*-release; then
+        PLATFORM='Ubuntu'
+    else
+        PLATFORM='Unkown'
+        return 1 # failed to detect
+    fi
+    echo $PLATFORM 
+    return 0 # succeed in getting platform
+}
+
 # install script
 UNAME=$(uname | tr "[:upper:]" "[:lower:]")
 if [ "$UNAME" == "linux" ]; then
-    bash ./scripts/ubuntu.sh
+    PLATFORM=$(getPlatform) 
+    if [ "$PLATFORM" == "Ubuntu" ]; then
+        bash ./scripts/ubuntu.sh
+    elif [ "$PLATFORM" == "Manjaro" ]; then
+        bash ./scripts/manjaro.sh
+    else
+        echo "INSTALL SCRIPT FAIL"
+    fi
 fi
 
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
