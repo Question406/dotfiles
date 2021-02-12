@@ -5,6 +5,9 @@ set shiftwidth=4 "On pressing tab, insert 4 spaces
 set expandtab "tab as 4 spaces
 set cursorline "highlight current line number
 set encoding=UTF-8 "use utf-8 as default encoding
+set hlsearch "highlight search
+set noshowmode "don't show --insert-- since vim-airline is used 
+set noerrorbells "disable beeping when error occurs
 language en_US.utf8 " default language setting in english
 
 "different cursor under different mode
@@ -21,6 +24,7 @@ let g:indentLine_defaultGroup = 'SpecialKey'
 " default language setting in english
 language en_US.utf8
 
+" for plub vim-airline
 " let airline mode show only first character
 " n for normal
 " i for insert
@@ -35,6 +39,9 @@ let g:airline_mode_map = {
     \ 'V' : 'V-L',
     \ '' : 'V-B',
     \ }
+let g:airline#extenxtions#tabline#enabled=1
+
+
 
 " NERDTree toggler, ctrl+n
 map <C-n> : NERDTreeToggle<CR>
