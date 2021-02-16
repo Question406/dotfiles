@@ -11,6 +11,7 @@
 - link:
     # vim stuff
     ~/.vim/autoload/plug.vim: vim/vim-plug/plug.vim    
+    ~/.vim/custom: vim/custom
     ~/.vimrc: .vimrc
 
     # bash stuff
