@@ -15,6 +15,8 @@ getPlatform(){
         PLATFORM='Manjaro'
     elif grep -Eqii "Ubuntu" /etc/issue || grep -Eq "Ubuntu" /etc/*-release; then
         PLATFORM='Ubuntu'
+    elif grep -Eqii "Arch" /etc/issue || grep -Eq "Arch" /etc/*-release; then
+        PLATFORM='Arch'
     else
         PLATFORM='Unkown'
         return 1 # failed to detect
@@ -27,10 +29,13 @@ getPlatform(){
 UNAME=$(uname | tr "[:upper:]" "[:lower:]")
 if [ "$UNAME" == "linux" ]; then
     PLATFORM=$(getPlatform) 
+    echo Platform is: $PLATFORM
     if [ "$PLATFORM" == "Ubuntu" ]; then
         bash ./scripts/ubuntu.sh
     elif [ "$PLATFORM" == "Manjaro" ]; then
         bash ./scripts/manjaro.sh
+    elif [ "$PLATFORM" == "Arch" ]; then
+        bash ./scripts/arch.sh
     else
         echo "INSTALL SCRIPT FAIL"
     fi
