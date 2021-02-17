@@ -41,4 +41,3 @@
 - shell:
    - [vim +PlugInstall +qall, Installing vim plugs]
    - [conda clean -i & conda install ipython, Base conda environments]
-   - [tmux source ~/.tmux.conf, Reload TMUX environment with TPM]
