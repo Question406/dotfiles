@@ -28,6 +28,7 @@
     ~/.gitconfig: .gitconfig
 
     # tmux stuff
+    ~/.tmux/plugins/tpm : tmux/tpm
     ~/.tmux.conf : .tmux.conf
 
     # conda stuff
@@ -40,3 +41,4 @@
 - shell:
    - [vim +PlugInstall +qall, Installing vim plugs]
    - [conda clean -i & conda install ipython, Base conda environments]
+   - [tmux source ~/.tmux.conf, Reload TMUX environment with TPM]

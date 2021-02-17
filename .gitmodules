@@ -19,3 +19,6 @@
 [submodule "bash/oh-my-bash"]
 	path = bash/oh-my-bash
 	url = https://github.com/ohmybash/oh-my-bash
+[submodule "tmux/tpm"]
+	path = tmux/tpm
+	url = https://github.com/tmux-plugins/tpm
