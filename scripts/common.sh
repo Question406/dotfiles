@@ -20,4 +20,5 @@ install_conda(){
     fi
 }
 
+
 install_conda

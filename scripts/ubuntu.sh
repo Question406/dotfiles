@@ -13,7 +13,20 @@ install_zsh(){
     fi
 }
 
+# install nodejs npm, for coc.nvim lsp
+install_nodejs(){
+    if [ ! type node >/dev/null 2>&1 -o  type npm >/dev/null 2>&1 ]; then
+        echo "Installing nodejs"
+        curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
+        sudo apt-get install -q -y nodejs
+    else
+        echo "Installed nodejs"
+        type node
+    fi
+}
+
+
 # real work
 bash scripts/common.sh
 install_zsh
-sudo apt -y install nodejs
+install_nodejs

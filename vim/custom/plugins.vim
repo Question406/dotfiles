@@ -2,7 +2,7 @@
 
 call plug#begin('~/.vim/plugged')
 " auto complete {}
-"Plug 'jiangmiao/auto-pairs'
+Plug 'jiangmiao/auto-pairs'
 
 " side view directory
 Plug 'preservim/nerdtree'
