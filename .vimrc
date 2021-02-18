@@ -10,7 +10,7 @@ set noshowmode "don't show --insert-- since vim-airline is used
 set noerrorbells "disable beeping when error occurs
 set backspace=indent,eol,start "backspace function restore after using coc.vimlsp, FIXME: don't know why
 set wildmenu "vim command auto-completion
-set wildmode=longest:list,full "vim command list configuration 
+set wildmode=longest:list,full "vim command list configuration
 language en_US.utf8 " default language setting in english
 
 "different cursor under different mode
@@ -51,7 +51,7 @@ let g:airline_mode_map = {
 let g:airline#extenxtions#tabline#enabled=1
 
 " coc.nvim settings
-let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-jedi']
+let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-jedi', 'coc-sh']
 " From official repository
 
 " TextEdit might fail if hidden is not set.
@@ -132,6 +132,7 @@ nmap <leader>rn <Plug>(coc-rename)
 " NERDTree toggler, ctrl+n
 map <C-n> : NERDTreeToggle<CR>
 
+" plugins in use
 source $HOME/.vim/custom/plugins.vim
 
 filetype plugin on

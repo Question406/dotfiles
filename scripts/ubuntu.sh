@@ -1,3 +1,4 @@
+# set -E bash
 # install zsh
 install_zsh(){
     if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then

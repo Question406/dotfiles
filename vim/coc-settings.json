@@ -10,5 +10,19 @@
     "jedi.enable": true,
     "jedi.startupMessage": true,
     "jedi.markupKindPreferred": "plaintext",
-    "jedi.executable.command": "jedi-language-server"
+    "jedi.executable.command": "jedi-language-server",
+    "languageserver": {
+        "bash": {
+            "command": "bash-language-server",
+            "args": [
+                "start"
+            ],
+            "filetypes": [
+                "sh"
+            ],
+            "ignoredRootPaths": [
+                "~"
+            ]
+        }
+    }
 }
