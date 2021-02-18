@@ -9,6 +9,8 @@ set hlsearch "highlight search
 set noshowmode "don't show --insert-- since vim-airline is used
 set noerrorbells "disable beeping when error occurs
 set backspace=indent,eol,start "backspace function restore after using coc.vimlsp, FIXME: don't know why
+set wildmenu "vim command auto-completion
+set wildmode=longest:list,full "vim command list configuration 
 language en_US.utf8 " default language setting in english
 
 "different cursor under different mode
