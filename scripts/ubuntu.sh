@@ -16,3 +16,4 @@ install_zsh(){
 # real work
 bash scripts/common.sh
 install_zsh
+sudo apt -y install nodejs

@@ -2,7 +2,7 @@
 
 call plug#begin('~/.vim/plugged')
 " auto complete {}
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs'
 
 " side view directory
 Plug 'preservim/nerdtree'
@@ -23,6 +23,9 @@ Plug 'Yggdroot/indentLine'
 
 " better commeent
 Plug 'preservim/nerdcommenter'
+
+" auto-completion, LSP client
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " color schemes
 " onedark color scheme
