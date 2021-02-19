@@ -1,2 +1,2 @@
 alias GPUstatus='nvidia-smi'
-alias whereami='echo $PWD'
+alias whereami='pwd'
