@@ -7,3 +7,7 @@ git_init_more(){
     curl -o .gitignore --fail --show-error --silent --location https://raw.githubusercontent.com/github/gitignore/master/$1.gitignore
     git add .gitignore && git commit -m "added gitignore from GitHub"
 }
+
+uninstall(){
+    sudo apt --auto-remove $1
+}
