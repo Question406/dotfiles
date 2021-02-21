@@ -99,10 +99,10 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # aliases
-source $ZSH_CUSTOM/myown/aliases
+source $ZSH_CUSTOM/myown/aliases.sh
 
 # shell funcs
-source $ZSH_CUSTOM/myown/funcs.zsh
+source $ZSH_CUSTOM/myown/funcs.sh
 
 # no dumplicate history
 setopt HIST_IGNORE_ALL_DUPS
