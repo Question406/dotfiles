@@ -1,4 +1,5 @@
 set number "line number
+set nocompatible "nocompatible mode
 "set relativenumber "set relative linenumber
 set ts=4 "inline = 4
 set shiftwidth=4 "On pressing tab, insert 4 spaces
