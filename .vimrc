@@ -52,7 +52,7 @@ let g:airline_mode_map = {
 let g:airline#extenxtions#tabline#enabled=1
 
 " coc.nvim settings
-let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-jedi', 'coc-sh']
+let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-jedi', 'coc-sh', 'coc-rust-analyzer']
 " From official repository
 
 " TextEdit might fail if hidden is not set.
