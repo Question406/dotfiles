@@ -40,3 +40,4 @@ unset __conda_setup
 
 # oh-my-bash take effect
 source $OSH/oh-my-bash.sh
+source "$HOME/.cargo/env"
