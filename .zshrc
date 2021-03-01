@@ -69,6 +69,7 @@ ZSH_CUSTOM=$HOME"/.customs/zshcustom"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
+        vi-mode
         z
         extract
         zsh-autosuggestions
