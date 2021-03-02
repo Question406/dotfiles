@@ -149,3 +149,5 @@ hi LineNr guibg=NONE ctermbg=245
 
 " let vim be transparent as terminal
 hi Normal guibg=NONE ctermbg=NONE
+
+imap jk <Esc>
