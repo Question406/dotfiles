@@ -10,7 +10,7 @@
 
 - link:
     # vim stuff
-    ~/.vim/autoload/plug.vim: vim/vim-plug/plug.vim    
+    ~/.vim/autoload/plug.vim: vim/vim-plug/plug.vim
     ~/.vim/coc-settings.json: vim/coc-settings.json
     ~/.vim/custom: vim/custom
     ~/.vimrc: .vimrc

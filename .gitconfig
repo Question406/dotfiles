@@ -1,10 +1,10 @@
 [user]
     email = sjcs_jijiabao@sjtu.edu.cn
-	name = question406
+    name = question406
 
 [core]
     editor = vim
 
 [credential]
     # temporarily (2 hrs) remember remote user
-	helper= cache --timeout 7200
+    helper= cache --timeout 7200
