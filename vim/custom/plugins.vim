@@ -25,7 +25,9 @@ Plug 'Yggdroot/indentLine'
 Plug 'preservim/nerdcommenter'
 
 " auto-completion, LSP client
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+if has('npm')
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+endif
 
 " color schemes
 " onedark color scheme
