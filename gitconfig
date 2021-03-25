@@ -14,3 +14,5 @@
 	proxy = http://127.0.0.1:58591
 [https]
 	proxy = https://127.0.0.1:58591
+[init]
+	defaultBranch = main
