@@ -4,15 +4,16 @@
 
 [core]
     editor = vim
-	autocrlf = input
+    autocrlf = input
 
 [credential]
     # temporarily (2 hrs) remember remote user
     helper= cache --timeout 7200
 
 [http]
-	proxy = http://127.0.0.1:58591
+    proxy = http://127.0.0.1:58591
 [https]
-	proxy = https://127.0.0.1:58591
+    proxy = https://127.0.0.1:58591
+
 [init]
-	defaultBranch = main
+    defaultBranch = main
