@@ -63,13 +63,15 @@ export UPDATE_ZSH_DAYS=30
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=$HOME"/.customs/zshcustom"
 
+export NVM_LAZY_LOAD=true
+#export NVM_COMPLETION=true
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
-#        vi-mode
+        vi-mode
         z
         extract
         zsh-autosuggestions
@@ -127,7 +129,10 @@ else
         export PATH="$HOME/.miniconda3/bin:$PATH"
     fi
 fi
-unset __conda_setup
+#unset __conda_setup
 # <<< conda initialize <<<
+
+# for man doc, use vim as pager, ref: https://zameermanji.com/blog/2012/12/30/using-vim-as-manpager/
+export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist noma' -\""
 
 

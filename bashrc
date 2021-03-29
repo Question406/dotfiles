@@ -41,3 +41,6 @@ unset __conda_setup
 # oh-my-bash take effect
 source $OSH/oh-my-bash.sh
 source "$HOME/.cargo/env"
+
+# use vim as man pager, src: https://zameermanji.com/blog/2012/12/30/using-vim-as-manpager/
+MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nonu noma' -\""
