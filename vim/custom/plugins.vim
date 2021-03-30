@@ -25,7 +25,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'preservim/nerdcommenter'
 
 " auto-completion, LSP client
-if has('npm')
+if executable('npm')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 endif
 

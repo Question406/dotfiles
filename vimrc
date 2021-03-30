@@ -72,7 +72,7 @@ else
 endif
 
 " coc-vim settings
-if has('npm')
+if executable('npm')
     " coc.nvim settings
     let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-jedi', 'coc-sh', 'coc-rust-analyzer']
     " From official repository
