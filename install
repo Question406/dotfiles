@@ -25,19 +25,26 @@ getPlatform(){
     return 0 # succeed in getting platform
 }
 
-# install script
-UNAME=$(uname | tr "[:upper:]" "[:lower:]")
-if [ "$UNAME" == "linux" ]; then
-    PLATFORM=$(getPlatform) 
-    echo Platform is: $PLATFORM
-    if [ "$PLATFORM" == "Ubuntu" ]; then
-        bash ./scripts/ubuntu.sh
-    elif [ "$PLATFORM" == "Manjaro" ]; then
-        bash ./scripts/manjaro.sh
-    elif [ "$PLATFORM" == "Arch" ]; then
-        bash ./scripts/arch.sh
-    else
-        echo "INSTALL SCRIPT FAIL"
+# check if has sudo privilege to install packages
+echo "check sudo privilege"
+sudo -v
+ISSU=$?
+
+if [ $ISSU -eq 0 ]; then
+    # install script
+    UNAME=$(uname | tr "[:upper:]" "[:lower:]")
+    if [ "$UNAME" == "linux" ]; then
+        PLATFORM=$(getPlatform) 
+        echo Platform is: $PLATFORM
+        if [ "$PLATFORM" == "Ubuntu" ]; then
+            bash ./scripts/ubuntu.sh
+        elif [ "$PLATFORM" == "Manjaro" ]; then
+            bash ./scripts/manjaro.sh
+        elif [ "$PLATFORM" == "Arch" ]; then
+            bash ./scripts/arch.sh
+        else
+            echo "INSTALL SCRIPT FAIL"
+        fi
     fi
 fi
 
