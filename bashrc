@@ -40,7 +40,22 @@ unset __conda_setup
 
 # oh-my-bash take effect
 source $OSH/oh-my-bash.sh
-source "$HOME/.cargo/env"
+
+# cargo, rust needed
+if [ -f $HOME/.cargo ]; then
+    source "$HOME/.cargo/env"
+fi
+
+ZSH_CUSTOM=$HOME"/.customs/zshcustom"
+
+# aliases
+source $ZSH_CUSTOM/myown/aliases.sh
+
+# shell funcs
+source $ZSH_CUSTOM/myown/funcs.sh
+if [ -f $ZSH_CUSTOM/myown/local-funcs.sh ]; then
+    source $ZSH_CUSTOM/myown/local-funcs.sh
+fi
 
 # use vim as man pager, src: https://zameermanji.com/blog/2012/12/30/using-vim-as-manpager/
 MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nonu noma' -\""
