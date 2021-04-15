@@ -15,6 +15,9 @@
     ~/.vim/custom: vim/custom
     ~/.vimrc: vimrc
 
+    # neovim stuff
+    ~/.config/nvim: nvim/
+
     # bash stuff
     ~/.oh-my-bash: bash/oh-my-bash
     ~/.bashrc: bashrc
