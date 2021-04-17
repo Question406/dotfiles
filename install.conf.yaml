@@ -16,6 +16,7 @@
     ~/.vimrc: vimrc
 
     # neovim stuff
+    ~/.local/share/nvim/site/autoload/plug.vim: vim/vim-plug/plug.vim
     ~/.config/nvim: nvim/
 
     # bash stuff

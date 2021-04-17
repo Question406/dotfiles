@@ -5,7 +5,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'jiangmiao/auto-pairs'
 
 " side view directory
-Plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree', {'on' : 'NERDTreeToggle'} " on-demand loading
 Plug 'ryanoasis/vim-devicons' " file type icons
 
 " vim git plug
