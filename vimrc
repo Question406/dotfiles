@@ -138,8 +138,8 @@ if executable('npm')
 endif
 " End of COC-settings
 
-" LeaderF settings, default now
-let g:Lf_ShortcutF = "<C-P>"
+" Leaderf settings, default now
+let g:Lf_ShortcutF = "<leader>ff"
 
 " don't show the help in normal mode
 let g:Lf_HideHelp = 1
