@@ -79,7 +79,7 @@ endif
 " coc-vim settings
 if executable('npm')
     " coc.nvim settings
-    let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-jedi', 'coc-sh', 'coc-rust-analyzer']
+    let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-jedi', 'coc-sh', 'coc-rust-analyzer', 'coc-clangd']
     " From official repository
 
     " Use tab for trigger completion with characters ahead and navigate.
