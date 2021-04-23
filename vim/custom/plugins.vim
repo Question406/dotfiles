@@ -24,6 +24,11 @@ Plug 'Yggdroot/indentLine'
 " better commeent
 Plug 'preservim/nerdcommenter'
 
+" fuzzy finder for a lot of things
+if has("python3")
+    Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+endif
+
 " auto-completion, LSP client
 if executable('npm')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
