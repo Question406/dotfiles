@@ -1,6 +1,5 @@
 # shell functions
 
-
 # git init a directory and .gitignore template from github, from https://stackoverflow.com/questions/17932658/git-init-with-option-for-auto-creation-of-a-default-gitignore
 git_init_more(){
     git init .
@@ -10,4 +9,10 @@ git_init_more(){
 
 uninstall(){
     sudo apt --auto-remove $1
+}
+
+blinkshell(){
+    # source config file for current shell
+    cur_shell=$(ps -p $$ | tail -1 | awk '{print $NF}')
+    exec $cur_shell
 }
