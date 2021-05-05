@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+# set -e, to make sure when sudo -v fails, the script doesn't stop
 
 CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
@@ -28,9 +28,9 @@ getPlatform(){
 # check if has sudo privilege to install packages
 echo "check sudo privilege"
 sudo -v
-ISSU=$?
+IS_SU=$?
 
-if [ $ISSU -eq 0 ]; then
+if [ $IS_SU -eq 0 ]; then
     # install script
     UNAME=$(uname | tr "[:upper:]" "[:lower:]")
     if [ "$UNAME" == "linux" ]; then
