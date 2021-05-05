@@ -16,3 +16,7 @@ blinkshell(){
     cur_shell=$(ps -p $$ | tail -1 | awk '{print $NF}')
     exec $cur_shell
 }
+
+clrpycache(){
+    find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
+}
