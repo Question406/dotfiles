@@ -579,7 +579,7 @@ c.InteractiveShell.banner1 = \
 
 ## Set the editor used by IPython (default to $EDITOR/vi/notepad).
 #  Default: 'vi'
-# c.TerminalInteractiveShell.editor = 'vi'
+c.TerminalInteractiveShell.editor = 'vim'
 
 ## Allows to enable/disable the prompt toolkit history search
 #  Default: True
