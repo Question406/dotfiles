@@ -14,6 +14,9 @@ set wildmenu "vim command auto-completion
 set wildmode=longest:list,full "vim command list configuration
 set showcmd "print partial command key at bottom
 set termguicolors "let vim use truecolor to render
+set mouse=a "mouse supported
+set linebreak "break line only when encontering punctuation tokens
+set autoread "trigger a notification if file is changes by other editor
 language en_US.utf8 " default language setting in english
 
 "different cursor under different mode
