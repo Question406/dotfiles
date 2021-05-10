@@ -12,7 +12,8 @@ set noerrorbells "disable beeping when error occurs
 set backspace=indent,eol,start "backspace function restore after using coc.vimlsp, FIXME: don't know why
 set wildmenu "vim command auto-completion
 set wildmode=longest:list,full "vim command list configuration
-set showcmd
+set showcmd "print partial command key at bottom
+set termguicolors "let vim use truecolor to render
 language en_US.utf8 " default language setting in english
 
 "different cursor under different mode
