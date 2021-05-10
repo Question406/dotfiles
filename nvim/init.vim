@@ -17,6 +17,7 @@ set termguicolors "let vim use truecolor to render
 set mouse=a "mouse supported
 set linebreak "break line only when encontering punctuation tokens
 set autoread "trigger a notification if file is changes by other editor
+set incsearch "during a search, find candidates as input changes
 language en_US.utf8 " default language setting in english
 
 "different cursor under different mode
