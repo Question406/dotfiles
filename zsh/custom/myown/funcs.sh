@@ -20,3 +20,18 @@ blinkshell(){
 clrpycache(){
     find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
 }
+
+updatePacs(){
+    # TODO: check platform 
+    sudo pacman -Syyu
+}
+
+rmPac(){
+    # TODO: check platform
+    sudo pacman -R $1
+}
+
+rmNoUsePac(){
+    # TODO: check platform 
+    sudo pacman -R $(sudo pacman -Qdt)
+}
