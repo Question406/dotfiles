@@ -110,6 +110,9 @@ source $ZSH_CUSTOM/myown/funcs.sh
 if [ -f $ZSH_CUSTOM/myown/local-funcs.sh ]; then
     source $ZSH_CUSTOM/myown/local-funcs.sh
 fi
+if [ -f $ZSH_CUSTOM/myown/local-aliases.sh ]; then
+    source $ZSH_CUSTOM/myown/local-aliases.sh
+fi
 
 # no dumplicate history
 setopt HIST_IGNORE_ALL_DUPS
