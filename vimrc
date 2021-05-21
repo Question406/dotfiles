@@ -13,12 +13,18 @@ set backspace=indent,eol,start "backspace function restore after using coc.vimls
 set wildmenu "vim command auto-completion
 set wildmode=longest:list,full "vim command list configuration
 set showcmd "print partial command key at bottom
-set termguicolors "let vim use truecolor to render
 set mouse=a "mouse supported
 set linebreak "break line only when encontering punctuation tokens
 set autoread "trigger a notification if file is changes by other editor
 set incsearch "during a search, find candidates as input changes
 language en_US.utf8 " default language setting in english
+
+"let vim use truecolor to render, to make color rendering normal in tmux, see: https://github.com/tmux/tmux/issues/1246
+if exists('+termguicolors') 
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum""]"
+    set termguicolors 
+endif
 
 "different cursor under different mode
 let &t_SI = "\<Esc>[6 q"
