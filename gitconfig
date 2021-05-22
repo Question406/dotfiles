@@ -11,9 +11,9 @@
     helper= cache --timeout 7200
 
 [http]
-    proxy = http://127.0.0.1:58591
+    proxy = http://127.0.0.1:1087
 [https]
-    proxy = https://127.0.0.1:58591
+    proxy = https://127.0.0.1:1087
 
 [init]
     defaultBranch = main
