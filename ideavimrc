@@ -1,0 +1,9 @@
+inoremap jk <Esc>
+xnoremap jk <Esc>
+set timeoutlen=300
+
+set showcmd
+set number
+set relativenumber
+
+set incsearch
