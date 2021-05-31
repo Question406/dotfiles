@@ -39,3 +39,7 @@ rmNoUsePac(){
 term_colors(){
     for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 }
+
+escape_ansi(){
+    cat $1 | sed 's/\x1b\[[0-9;]*m//g' > $1.no_ansi
+}
