@@ -32,7 +32,7 @@
 
 ## lines of code to run at IPython startup.
 #  Default: []
-# c.InteractiveShellApp.exec_lines = []
+c.InteractiveShellApp.exec_lines = [ "import numpy as np" ]
 
 ## A list of dotted module names of IPython extensions to load.
 #  Default: []
@@ -607,7 +607,7 @@ c.TerminalInteractiveShell.editor = 'vim'
 ## The name or class of a Pygments style to use for syntax highlighting. To see
 #  available styles, run `pygmentize -L styles`.
 #  Default: traitlets.Undefined
-# c.TerminalInteractiveShell.highlighting_style = traitlets.Undefined
+c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Undefined
 
 ## Override highlighting format for specific tokens
 #  Default: {}
