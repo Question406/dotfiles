@@ -2,8 +2,20 @@ inoremap jk <Esc>
 xnoremap jk <Esc>
 set timeoutlen=300
 
-set showcmd
 set number
 set relativenumber
+set showcmd
 
 set incsearch
+set hlsearch
+set ignorecase
+
+let mapleader = "\<space>"
+
+map <leader>R <Action>(ReformatCode)
+
+" Map <leader>d to start debug
+map <leader>d <Action>(Debug)
+
+" Map \b to toggle the breakpoint on the current line
+map <leader>b <Action>(ToggleLineBreakpoint)
