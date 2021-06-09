@@ -5,17 +5,27 @@ set timeoutlen=300
 set number
 set relativenumber
 set showcmd
+set showmode
 
 set incsearch
 set hlsearch
 set ignorecase
+set smartcase
+
+set so=5
 
 let mapleader = "\<space>"
 
-map <leader>R <Action>(ReformatCode)
+map <leader>rf <Action>(ReformatCode)
+map <leader>ru <Action>(Run)
+
+" Stop running
+map <leader>s <Action>(Stop)
 
 " Map <leader>d to start debug
-map <leader>d <Action>(Debug)
+map <leader>d <Action>(ChooseDebugConfiguration)
 
 " Map \b to toggle the breakpoint on the current line
 map <leader>b <Action>(ToggleLineBreakpoint)
+
+map <leader>o <Action>(FileStructurePopup)

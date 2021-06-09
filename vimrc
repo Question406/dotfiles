@@ -1,23 +1,28 @@
-set number "line number
-set nocompatible "nocompatible mode
-set relativenumber "set relative linenumber
+set number "print line number
+set relativenumber "print relative linenumber
+set nocompatible "nocompatible mode, ignore vi compatibility
 set ts=4 "inline = 4
+set so=5 "keep 5 preview lines during scrolling
 set shiftwidth=4 "On pressing tab, insert 4 spaces
 set expandtab "tab as 4 spaces
 set cursorline "highlight current line number
 set encoding=UTF-8 "use utf-8 as default encoding
-set hlsearch "highlight search
-set noshowmode "don't show --insert-- since vim-airline is used
+set noshowmode "don't show --insert-- since vim-airline already does it
 set noerrorbells "disable beeping when error occurs
 set backspace=indent,eol,start "backspace function restore after using coc.vimlsp, FIXME: don't know why
 set wildmenu "vim command auto-completion
 set wildmode=longest:list,full "vim command list configuration
 set showcmd "print partial command key at bottom
-set mouse=a "mouse supported
+set mouse=a "mouse sepported
 set linebreak "break line only when encontering punctuation tokens
 set autoread "trigger a notification if file is changes by other editor
-set incsearch "during a search, find candidates as input changes
 language en_US.utf8 " default language setting in english
+
+" search settings
+set hlsearch "highlight search
+set incsearch "during a search, find candidates as input changes
+set ignorecase "during a search, ignore upper case
+set smartcase "during a search, attend on case when input upper case chars
 
 "let vim use truecolor to render, to make color rendering normal in tmux, see: https://github.com/tmux/tmux/issues/1246
 if exists('+termguicolors') 
