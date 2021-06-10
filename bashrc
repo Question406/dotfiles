@@ -1,7 +1,7 @@
 # oh-my-bash setting variables
 export OSH=$HOME/.oh-my-bash
 OSH_THEME="axin"
-DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="false"
 
 completions=(
     git
@@ -50,14 +50,14 @@ ZSH_CUSTOM=$HOME"/.customs/zshcustom"
 
 # aliases
 source $ZSH_CUSTOM/myown/aliases.sh
+if [ -f $ZSH_CUSTOM/myown/local-aliases.sh ]; then
+    source $ZSH_CUSTOM/myown/local-aliases.sh
+fi
 
 # shell funcs
 source $ZSH_CUSTOM/myown/funcs.sh
 if [ -f $ZSH_CUSTOM/myown/local-funcs.sh ]; then
     source $ZSH_CUSTOM/myown/local-funcs.sh
-fi
-if [ -f $ZSH_CUSTOM/myown/local-aliases.sh ]; then
-    source $ZSH_CUSTOM/myown/local-aliases.sh
 fi
 
 # use vim as man pager, src: https://zameermanji.com/blog/2012/12/30/using-vim-as-manpager/
