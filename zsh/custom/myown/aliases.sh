@@ -1,3 +1,5 @@
+alias mv='mv -i'
+alias rm='rm -i'
 alias whereami='pwd'
 alias clr='clear'
 alias vi='vim'
