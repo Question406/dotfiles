@@ -91,6 +91,9 @@ else
   set signcolumn=yes
 endif
 
+" startify setting
+let g:startify_custom_header = 
+        \ 'startify#center(startify#fortune#cowsay())'
 
 " coc-vim settings
 if executable('npm')

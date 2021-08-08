@@ -24,6 +24,9 @@ Plug 'Yggdroot/indentLine'
 " better commeent
 Plug 'preservim/nerdcommenter'
 
+" welcome page
+Plug 'mhinz/vim-startify'
+
 " fuzzy finder for a lot of things
 if has("python3")
     Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
