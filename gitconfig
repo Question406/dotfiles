@@ -10,11 +10,11 @@
     # temporarily (2 hrs) remember remote user
     helper= cache --timeout 7200
 
-[http]
-    proxy = http://127.0.0.1:1087
-[https]
-    proxy = https://127.0.0.1:1087
-
+#[http]
+#    proxy = http://127.0.0.1:1087
+#[https]
+#    proxy = https://127.0.0.1:1087
+#
 [init]
     defaultBranch = main
 [merge]

@@ -37,6 +37,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+eval $(thefuck --alias)
 
 # oh-my-bash take effect
 source $OSH/oh-my-bash.sh
