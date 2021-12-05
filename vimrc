@@ -63,13 +63,13 @@ language en_US.utf8
 " V for visual-line
 " ^V for visual-block
 " FIXME: there're other modes, but i don't understand what they are now
-let g:airline_mode_map = {
-    \ 'n' : 'N',
-    \ 'i' : 'I',
-    \ 'v' : 'V',
-    \ 'V' : 'V-L',
-    \ '' : 'V-B',
-    \ }
+" let g:airline_mode_map = {
+"     \ 'n' : 'N',
+"     \ 'i' : 'I',
+"     \ 'v' : 'V',
+"     \ 'V' : 'V-L',
+"     \ '' : 'V-B',
+"     \ }
 let g:airline#extenxtions#tabline#enabled=1
 
 " TextEdit might fail if hidden is not set.

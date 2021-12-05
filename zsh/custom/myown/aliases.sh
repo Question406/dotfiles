@@ -11,3 +11,4 @@ alias act_venv='source ./bin/activate' # activate virtual env environment under 
 alias ranger2='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"' # cd into the last directory ranger has been to when exit ranger
 alias grep_process='ps -aux | grep grep -v | grep'
 alias show_gpu='nvidia-smi && echo cuda:$CUDA_VISIBLE_DEVICES'
+alias fscnt='du -sh ./*' # count file size at this directory

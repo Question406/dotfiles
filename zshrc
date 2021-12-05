@@ -121,6 +121,8 @@ if [ -f $ZSH_CUSTOM/myown/local-aliases.sh ]; then
     source $ZSH_CUSTOM/myown/local-aliases.sh
 fi
 
+eval $(thefuck --alias)
+
 # no dumplicate history
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_EXPIRE_DUPS_FIRST
