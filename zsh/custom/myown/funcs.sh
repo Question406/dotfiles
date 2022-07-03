@@ -43,3 +43,9 @@ term_colors(){
 escape_ansi(){
     cat $1 | sed 's/\x1b\[[0-9;]*m//g' > $1.no_ansi
 }
+
+onproxy(){
+    # set proxy port
+    export HTTP_PROXY="127.0.0.1:$1"
+    export HTTPS_PROXY="127.0.0.1:$1"
+}
