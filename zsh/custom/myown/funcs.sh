@@ -7,10 +7,6 @@ git_init_more(){
     git add .gitignore && git commit -m "added gitignore from GitHub"
 }
 
-uninstall(){
-    sudo apt --auto-remove $1
-}
-
 blinkshell(){
     # source config file for current shell
     cur_shell=$(ps -p $$ | tail -1 | awk '{print $NF}')
@@ -21,25 +17,12 @@ clrpycache(){
     find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
 }
 
-updatePacs(){
-    # TODO: check platform 
-    sudo pacman -Syyu
-}
-
-rmPac(){
-    # TODO: check platform
-    sudo pacman -R $1
-}
-
-rmNoUsePac(){
-    # TODO: check platform 
-    sudo pacman -R $(sudo pacman -Qdt)
-}
-
+# print out colors in terminal
 term_colors(){
     for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 }
 
+# remove all ansi characters in a file and output to no_ansi file
 escape_ansi(){
     cat $1 | sed 's/\x1b\[[0-9;]*m//g' > $1.no_ansi
 }
@@ -49,3 +32,9 @@ onproxy(){
     export HTTP_PROXY="127.0.0.1:$1"
     export HTTPS_PROXY="127.0.0.1:$1"
 }
+
+mdcd(){
+    # make dir and cd it
+    mkdir $1; cd $1
+}
+
