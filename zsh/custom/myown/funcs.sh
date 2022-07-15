@@ -32,19 +32,8 @@ onproxy(){
     export HTTP_PROXY="127.0.0.1:$1"
     export HTTPS_PROXY="127.0.0.1:$1"
 }
-<<<<<<< HEAD
 
 mdcd(){
     # make dir and cd it
     mkdir $1; cd $1
 }
-
-||||||| 12e8e88
-=======
-
-mdcd(){
-    # make dir and cd it
-    makedir $1; cd $1
-}
-
->>>>>>> 26ffa847f3b31613fbd19b77eb3b13ca73bee0a6
