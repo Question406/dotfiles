@@ -33,6 +33,11 @@ onproxy(){
     export HTTPS_PROXY="127.0.0.1:$1"
 }
 
+noproxy() {
+    unset HTTP_PROXY
+    unset HTTPS_PROXY
+}
+
 mdcd(){
     # make dir and cd it
     mkdir $1; cd $1
