@@ -80,8 +80,9 @@ plugins=(git
         vi-mode
         z
         extract
+        zsh-syntax-highlighting
         zsh-autosuggestions
-        zsh-syntax-highlighting)
+    )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -148,7 +149,7 @@ setopt HIST_EXPIRE_DUPS_FIRST
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$($HOME'/.miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('$HOME/.miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
@@ -158,7 +159,7 @@ else
         export PATH="$HOME/.miniconda3/bin:$PATH"
     fi
 fi
-#unset __conda_setup
+unset __conda_setup
 # <<< conda initialize <<<
 
 # for man doc, use vim as pager, ref: https://zameermanji.com/blog/2012/12/30/using-vim-as-manpager/
@@ -166,3 +167,4 @@ export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist noma
 
 # add ipython path
 export PATH=$PATH:~/.local/bin
+export PATH=$PATH:$HOME/.spicetify
