@@ -80,8 +80,10 @@ plugins=(git
         vi-mode
         z
         extract
-        zsh-syntax-highlighting
+        #zsh-syntax-highlighting
+        fast-syntax-highlighting
         zsh-autosuggestions
+        tmux
     )
 
 source $ZSH/oh-my-zsh.sh
@@ -90,17 +92,17 @@ bindkey "^I" expand-or-complete-with-dots
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+#if [[ -n $SSH_CONNECTION ]]; then
+#  export EDITOR='vim'
+#else
+#  export EDITOR='mvim'
+#fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -168,3 +170,6 @@ export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist noma
 # add ipython path
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:$HOME/.spicetify
+export PATH=$PATH:/Users/jiyi/.spicetify
+
+alias ls=exa
