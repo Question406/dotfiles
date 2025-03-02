@@ -2,6 +2,7 @@ neovim
 obsidian
 iterm2
 eza
+dust
 tmux
 input-source-pro
 

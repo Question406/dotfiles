@@ -168,4 +168,5 @@ export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist noma
 # add ipython path
 export PATH=$PATH:~/.local/bin
 
-alias ls=eza
+alias du="dust"
+alias ls='eza --icons'

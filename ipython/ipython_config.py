@@ -1,16 +1,16 @@
 # Configuration file for ipython.
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # InteractiveShellApp(Configurable) configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 ## A Mixin for applications that start InteractiveShell instances.
-#  
+#
 #  Provides configurables for loading extensions and executing files as part of
 #  configuring a Shell environment.
-#  
+#
 #  The following methods should be called by the :meth:`initialize` method of the
 #  subclass:
-#  
+#
 #    - :meth:`init_path`
 #    - :meth:`init_shell` (to be implemented by the subclass)
 #    - :meth:`init_gui_pylab`
@@ -32,25 +32,25 @@
 
 ## lines of code to run at IPython startup.
 #  Default: []
-c.InteractiveShellApp.exec_lines = [ "import numpy as np" ]
+c.InteractiveShellApp.exec_lines = ["import numpy as np"]
 
 ## A list of dotted module names of IPython extensions to load.
 #  Default: []
-# c.InteractiveShellApp.extensions = []
+c.InteractiveShellApp.extensions = ["autoreload"]
 
 ## DEPRECATED. Dotted module name of a single extra IPython extension to load.
-#  
+#
 #  Only one extension can be added this way.
-#  
+#
 #  Only used with traitlets < 5.0, plural extra_extensions list is used in
 #  traitlets 5.
 #  Default: ''
 # c.InteractiveShellApp.extra_extension = ''
 
 ## Dotted module name(s) of one or more IPython extensions to load.
-#  
+#
 #  For specifying extra extensions to load on the command-line.
-#  
+#
 #  .. versionadded:: 7.10
 #  Default: []
 # c.InteractiveShellApp.extra_extensions = []
@@ -94,7 +94,7 @@ c.InteractiveShellApp.exec_lines = [ "import numpy as np" ]
 
 ## If true, IPython will populate the user namespace with numpy, pylab, etc. and
 #  an ``import *`` is done from numpy and pylab, when using pylab mode.
-#  
+#
 #  When False, pylab mode should not import any names into the user namespace.
 #  Default: True
 # c.InteractiveShellApp.pylab_import_all = True
@@ -103,9 +103,9 @@ c.InteractiveShellApp.exec_lines = [ "import numpy as np" ]
 #  Default: False
 # c.InteractiveShellApp.reraise_ipython_extension_failures = False
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Application(SingletonConfigurable) configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 ## This is an application.
 
 ## The date format used by logging formatters for %(asctime)s
@@ -129,9 +129,9 @@ c.InteractiveShellApp.exec_lines = [ "import numpy as np" ]
 #  Default: False
 # c.Application.show_config_json = False
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # BaseIPythonApplication(Application) configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 ## IPython: an enhanced interactive Python shell.
 
 ## Whether to create profile dir if it doesn't exist
@@ -146,7 +146,7 @@ c.InteractiveShellApp.exec_lines = [ "import numpy as np" ]
 # c.BaseIPythonApplication.copy_config_files = False
 
 ## Path to an extra config file to load.
-#  
+#
 #  If specified, load this config file in addition to any other IPython config.
 #  Default: ''
 # c.BaseIPythonApplication.extra_config_file = ''
@@ -191,9 +191,9 @@ c.InteractiveShellApp.exec_lines = [ "import numpy as np" ]
 #  Default: False
 # c.BaseIPythonApplication.verbose_crash = False
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # TerminalIPythonApp(BaseIPythonApplication, InteractiveShellApp) configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 ## Execute the given command string.
 #  See also: InteractiveShellApp.code_to_run
 # c.TerminalIPythonApp.code_to_run = ''
@@ -226,11 +226,11 @@ c.InteractiveShellApp.exec_lines = [ "import numpy as np" ]
 #  See also: BaseIPythonApplication.extra_config_file
 # c.TerminalIPythonApp.extra_config_file = ''
 
-## 
+##
 #  See also: InteractiveShellApp.extra_extension
 # c.TerminalIPythonApp.extra_extension = ''
 
-## 
+##
 #  See also: InteractiveShellApp.extra_extensions
 # c.TerminalIPythonApp.extra_extensions = []
 
@@ -262,7 +262,7 @@ c.InteractiveShellApp.exec_lines = [ "import numpy as np" ]
 #  Default: 'IPython.terminal.interactiveshell.TerminalInteractiveShell'
 # c.TerminalIPythonApp.interactive_shell_class = 'IPython.terminal.interactiveshell.TerminalInteractiveShell'
 
-## 
+##
 #  See also: BaseIPythonApplication.ipython_dir
 # c.TerminalIPythonApp.ipython_dir = ''
 
@@ -322,9 +322,9 @@ c.InteractiveShellApp.exec_lines = [ "import numpy as np" ]
 #  See also: BaseIPythonApplication.verbose_crash
 # c.TerminalIPythonApp.verbose_crash = False
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # InteractiveShell(SingletonConfigurable) configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 ## An enhanced, interactive shell for Python.
 
 ## 'all', 'last', 'last_expr' or 'none', 'last_expr_or_assign' specifying which
@@ -386,7 +386,7 @@ c.InteractiveShellApp.exec_lines = [ "import numpy as np" ]
 ## Set the color scheme (NoColor, Neutral, Linux, or LightBG).
 #  Choices: any of ['Neutral', 'NoColor', 'LightBG', 'Linux'] (case-insensitive)
 #  Default: 'Neutral'
-c.InteractiveShell.colors = 'Linux'
+c.InteractiveShell.colors = "Linux"
 
 #  Default: False
 # c.InteractiveShell.debug = False
@@ -492,22 +492,22 @@ c.InteractiveShell.colors = 'Linux'
 #  Default: 'Context'
 # c.InteractiveShell.xmode = 'Context'
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # TerminalInteractiveShell(InteractiveShell) configuration
-#------------------------------------------------------------------------------
-## 
+# ------------------------------------------------------------------------------
+##
 #  See also: InteractiveShell.ast_node_interactivity
 # c.TerminalInteractiveShell.ast_node_interactivity = 'last_expr'
 
-## 
+##
 #  See also: InteractiveShell.ast_transformers
 # c.TerminalInteractiveShell.ast_transformers = []
 
-## 
+##
 #  See also: InteractiveShell.autoawait
 # c.TerminalInteractiveShell.autoawait = True
 
-## 
+##
 #  See also: InteractiveShell.autocall
 # c.TerminalInteractiveShell.autocall = 0
 
@@ -515,11 +515,11 @@ c.InteractiveShell.colors = 'Linux'
 #  Default: None
 # c.TerminalInteractiveShell.autoformatter = None
 
-## 
+##
 #  See also: InteractiveShell.autoindent
 # c.TerminalInteractiveShell.autoindent = True
 
-## 
+##
 #  See also: InteractiveShell.automagic
 # c.TerminalInteractiveShell.automagic = True
 
@@ -528,20 +528,26 @@ c.InteractiveShell.colors = 'Linux'
 # c.TerminalInteractiveShell.banner1 = "Python 3.8.5 (default, Sep  4 2020, 07:30:14) \nType 'copyright', 'credits' or 'license' for more information\nIPython 7.19.0 -- An enhanced Interactive Python. Type '?' for help.\n"
 import sys
 import IPython
-c.InteractiveShell.banner1 = \
-    '  Python\t:  ' + sys.version.replace('\n', ' ') + '\n' + \
-    '  IPython\t:  ' + IPython.__version__ + '\n' \
-    '  Interpreter\t:  ' + sys.executable + '\n'
+
+c.InteractiveShell.banner1 = (
+    "  Python\t:  "
+    + sys.version.replace("\n", " ")
+    + "\n"
+    + "  IPython\t:  "
+    + IPython.__version__
+    + "\n"
+    "  Interpreter\t:  " + sys.executable + "\n"
+)
 
 ## The part of the banner to be printed after the profile
 #  See also: InteractiveShell.banner2
 # c.TerminalInteractiveShell.banner2 = ''
 
-## 
+##
 #  See also: InteractiveShell.cache_size
 # c.TerminalInteractiveShell.cache_size = 1000
 
-## 
+##
 #  See also: InteractiveShell.color_info
 # c.TerminalInteractiveShell.color_info = True
 
@@ -579,13 +585,13 @@ c.InteractiveShell.banner1 = \
 
 ## Set the editor used by IPython (default to $EDITOR/vi/notepad).
 #  Default: 'vi'
-c.TerminalInteractiveShell.editor = 'vim'
+c.TerminalInteractiveShell.editor = "vi"
 
 ## Allows to enable/disable the prompt toolkit history search
 #  Default: True
 # c.TerminalInteractiveShell.enable_history_search = True
 
-## 
+##
 #  See also: InteractiveShell.enable_html_pager
 # c.TerminalInteractiveShell.enable_html_pager = False
 
@@ -607,7 +613,7 @@ c.TerminalInteractiveShell.editor = 'vim'
 ## The name or class of a Pygments style to use for syntax highlighting. To see
 #  available styles, run `pygmentize -L styles`.
 #  Default: traitlets.Undefined
-c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Undefined
+c.TerminalInteractiveShell.highlighting_style = "solarized-light"  # traitlets.Undefined
 
 ## Override highlighting format for specific tokens
 #  Default: {}
@@ -617,22 +623,22 @@ c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Unde
 #  See also: InteractiveShell.history_length
 # c.TerminalInteractiveShell.history_length = 10000
 
-## 
+##
 #  See also: InteractiveShell.history_load_length
 # c.TerminalInteractiveShell.history_load_length = 1000
 
 #  See also: InteractiveShell.ipython_dir
 # c.TerminalInteractiveShell.ipython_dir = ''
 
-## 
+##
 #  See also: InteractiveShell.logappend
 # c.TerminalInteractiveShell.logappend = ''
 
-## 
+##
 #  See also: InteractiveShell.logfile
 # c.TerminalInteractiveShell.logfile = ''
 
-## 
+##
 #  See also: InteractiveShell.logstart
 # c.TerminalInteractiveShell.logstart = False
 
@@ -652,7 +658,7 @@ c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Unde
 #  See also: InteractiveShell.object_info_string_level
 # c.TerminalInteractiveShell.object_info_string_level = 0
 
-## 
+##
 #  See also: InteractiveShell.pdb
 # c.TerminalInteractiveShell.pdb = False
 
@@ -701,11 +707,11 @@ c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Unde
 # c.TerminalInteractiveShell.show_rewritten_input = True
 
 ## Use `raw_input` for the REPL, without completion and prompt colors.
-#  
+#
 #  Useful when controlling IPython as a subprocess, and piping STDIN/OUT/ERR.
 #  Known usage are: IPython own testing machinery, and emacs inferior-shell
 #  integration through elpy.
-#  
+#
 #  This mode default to `True` if the `IPY_TEST_SIMPLE_PROMPT` environment
 #  variable is set, or the current terminal is not a tty.
 #  Default: False
@@ -718,7 +724,7 @@ c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Unde
 #  Default: 6
 # c.TerminalInteractiveShell.space_for_menu = 6
 
-## 
+##
 #  See also: InteractiveShell.sphinxify_docstring
 # c.TerminalInteractiveShell.sphinxify_docstring = False
 
@@ -744,23 +750,23 @@ c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Unde
 #  See also: InteractiveShell.xmode
 # c.TerminalInteractiveShell.xmode = 'Context'
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # HistoryAccessor(HistoryAccessorBase) configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 ## Access the history database without adding to it.
-#  
+#
 #  This is intended for use by standalone history tools. IPython shells use
 #  HistoryManager, below, which is a subclass of this.
 
 ## Options for configuring the SQLite connection
-#  
+#
 #  These options are passed as keyword args to sqlite3.connect when establishing
 #  database connections.
 #  Default: {}
 # c.HistoryAccessor.connection_options = {}
 
 ## enable the SQLite history
-#  
+#
 #  set enabled=False to disable the SQLite history, in which case there will be
 #  no stored history, no SQLite connection, and no background saving thread.
 #  This may be necessary in some threaded environments where IPython is embedded.
@@ -768,25 +774,25 @@ c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Unde
 # c.HistoryAccessor.enabled = True
 
 ## Path to file to use for SQLite history database.
-#  
+#
 #  By default, IPython will put the history database in the IPython profile
 #  directory.  If you would rather share one history among profiles, you can set
 #  this value in each, so that they are consistent.
-#  
+#
 #  Due to an issue with fcntl, SQLite is known to misbehave on some NFS mounts.
 #  If you see IPython hanging, try setting this to something on a local disk,
 #  e.g::
-#  
+#
 #      ipython --HistoryManager.hist_file=/tmp/ipython_hist.sqlite
-#  
+#
 #  you can also use the specific value `:memory:` (including the colon at both
 #  end but not the back ticks), to avoid creating an history file.
 #  Default: ''
 # c.HistoryAccessor.hist_file = ''
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # HistoryManager(HistoryAccessor) configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 ## A class to organize all history-related functionality in one place.
 
 ## Options for configuring the SQLite connection
@@ -810,14 +816,14 @@ c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Unde
 #  See also: HistoryAccessor.hist_file
 # c.HistoryManager.hist_file = ''
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # ProfileDir(LoggingConfigurable) configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 ## An object to manage the profile directory and its resources.
-#  
+#
 #  The profile directory is used by all IPython applications, to manage
 #  configuration, logging and security.
-#  
+#
 #  This object knows how to find, create and manage these directories. This
 #  should be used by any code that wants to handle profiles.
 
@@ -826,28 +832,28 @@ c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Unde
 #  Default: ''
 # c.ProfileDir.location = ''
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # BaseFormatter(Configurable) configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 ## A base formatter class that is configurable.
-#  
+#
 #  This formatter should usually be used as the base class of all formatters. It
 #  is a traited :class:`Configurable` class and includes an extensible API for
 #  users to determine how their objects are formatted. The following logic is
 #  used to find a function to format an given object.
-#  
+#
 #  1. The object is introspected to see if it has a method with the name
 #     :attr:`print_method`. If is does, that object is passed to that method
 #     for formatting.
 #  2. If no print method is found, three internal dictionaries are consulted
 #     to find print method: :attr:`singleton_printers`, :attr:`type_printers`
 #     and :attr:`deferred_printers`.
-#  
+#
 #  Users should use these dictionaries to register functions that will be used to
 #  compute the format data for their objects (if those objects don't have the
 #  special print methods). The easiest way of using these dictionaries is through
 #  the :meth:`for_type` and :meth:`for_type_by_name` methods.
-#  
+#
 #  If no function/callable is found to compute the format data, ``None`` is
 #  returned and this format type is not used.
 
@@ -863,16 +869,16 @@ c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Unde
 #  Default: {}
 # c.BaseFormatter.type_printers = {}
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # PlainTextFormatter(BaseFormatter) configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 ## The default pretty-printer.
-#  
+#
 #  This uses :mod:`IPython.lib.pretty` to compute the format data of the object.
 #  If the object cannot be pretty printed, :func:`repr` is used. See the
 #  documentation of :mod:`IPython.lib.pretty` for details on how to write pretty
 #  printers.  Here is a simple example::
-#  
+#
 #      def dtype_pprinter(obj, p, cycle):
 #          if cycle:
 #              return p.text('dtype(...)')
@@ -895,7 +901,7 @@ c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Unde
 # c.PlainTextFormatter.float_precision = ''
 
 ## Truncate large collections (lists, dicts, tuples, sets) to this size.
-#  
+#
 #  Set to 0 to disable truncation.
 #  Default: 1000
 # c.PlainTextFormatter.max_seq_length = 1000
@@ -918,9 +924,9 @@ c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Unde
 #  Default: False
 # c.PlainTextFormatter.verbose = False
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Completer(Configurable) configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 ## Enable unicode completions, e.g. \alpha<tab> . Includes completion of latex
 #  commands, unicode names, and expanding unicode characters back to latex
 #  commands.
@@ -934,7 +940,7 @@ c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Unde
 
 ## Activate greedy completion PENDING DEPRECTION. this is now mostly taken care
 #  of with Jedi.
-#  
+#
 #  This will enable completion on elements of lists, results of function calls,
 #  etc., but can be unsafe because the code is actually evaluated on TAB.
 #  Default: False
@@ -951,9 +957,9 @@ c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Unde
 #  Default: True
 # c.Completer.use_jedi = True
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # IPCompleter(Completer) configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 ## Extension of the completer class with IPython-specific features
 
 ## Enable unicode completions, e.g. \alpha<tab> . Includes completion of latex
@@ -977,32 +983,32 @@ c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Unde
 # c.IPCompleter.jedi_compute_type_timeout = 400
 
 ## DEPRECATED as of version 5.0.
-#  
+#
 #  Instruct the completer to use __all__ for the completion
-#  
+#
 #  Specifically, when completing on ``object.<tab>``.
-#  
+#
 #  When True: only those names in obj.__all__ will be included.
-#  
+#
 #  When False [default]: the __all__ attribute is ignored
 #  Default: False
 # c.IPCompleter.limit_to__all__ = False
 
 ## Whether to merge completion results into a single list
-#  
+#
 #  If False, only the completion results from the first non-empty completer will
 #  be returned.
 #  Default: True
 # c.IPCompleter.merge_completions = True
 
 ## Instruct the completer to omit private method names
-#  
+#
 #  Specifically, when completing on ``object.<tab>``.
-#  
+#
 #  When 2 [default]: all names that start with '_' will be excluded.
-#  
+#
 #  When 1: all 'magic' names (``__foo__``) will be excluded.
-#  
+#
 #  When 0: nothing will be excluded.
 #  Choices: any of [0, 1, 2]
 #  Default: 2
@@ -1013,49 +1019,48 @@ c.TerminalInteractiveShell.highlighting_style = 'solarized-light'#traitlets.Unde
 #  See also: Completer.use_jedi
 # c.IPCompleter.use_jedi = True
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # ScriptMagics(Magics) configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 ## Magics for talking to scripts
-#  
+#
 #  This defines a base `%%script` cell magic for running a cell with a program in
 #  a subprocess, and registers a few top-level magics that call %%script with
 #  common interpreters.
 
 ## Extra script cell magics to define
-#  
+#
 #  This generates simple wrappers of `%%script foo` as `%%foo`.
-#  
+#
 #  If you want to add script magics that aren't on your path, specify them in
 #  script_paths
 #  Default: []
 # c.ScriptMagics.script_magics = []
 
 ## Dict mapping short 'ruby' names to full paths, such as '/opt/secret/bin/ruby'
-#  
+#
 #  Only necessary for items in script_magics where the default path will not find
 #  the right interpreter.
 #  Default: {}
 # c.ScriptMagics.script_paths = {}
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # LoggingMagics(Magics) configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 ## Magics related to all logging machinery.
 
 ## Suppress output of log state when logging is enabled
 #  Default: False
 # c.LoggingMagics.quiet = False
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # StoreMagics(Magics) configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 ## Lightweight persistence for python variables.
-#  
+#
 #  Provides the %store magic.
 
 ## If True, any %store-d variables will be automatically restored when IPython
 #  starts.
 #  Default: False
 # c.StoreMagics.autorestore = False
-
