@@ -1,7 +1,11 @@
-if not [ -f ~/.config/nvim/initialized ]; then
+if ! [ -f ~/.config/nvim/initialized ]; then
     echo "Neovim is not installed yet. Installing..."
-    mv ~/.config/nvim ~/.config/nvim.bak
-    mv ~/.local/share/nvim ~/.local/share/nvim.bak
+    if [ -f ~/.config/nvim ]; then
+        mv ~/.config/nvim ~/.config/nvim.bak
+    fi
+    if [ -f ~/.local/share/nvim ]; then
+        mv ~/.local/share/nvim ~/.local/share/nvim.bak
+    fi
     git clone https://github.com/LazyVim/starter ~/.config/nvim
     rm -rf ~/.config/nvim/.git
     touch ~/.config/nvim/initialized
