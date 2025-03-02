@@ -3,6 +3,7 @@ obsidian
 iterm2
 eza
 tmux
+input-source-pro
 
 raycast
 betterdisplay
