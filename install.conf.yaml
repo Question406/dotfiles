@@ -34,4 +34,3 @@
 
 - shell:
    - [bash tmux/install.sh, Installing tmux plugins]
-  #- [conda clean -i & conda install ipython, Base conda environments]

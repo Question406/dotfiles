@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # set -e, to make sure when sudo -v fails, the script doesn't stop
+set -e
 
 CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
@@ -35,7 +36,7 @@ if [ $IS_SU -eq 0 ]; then
     UNAME=$(uname | tr "[:upper:]" "[:lower:]")
     if [ "$UNAME" == "linux" ]; then
         PLATFORM=$(getPlatform) 
-        echo Platform is: $PLATFORM
+        echo "Platform is: $PLATFORM"
         if [ "$PLATFORM" == "Ubuntu" ]; then
             bash ./scripts/ubuntu.sh
         elif [ "$PLATFORM" == "Manjaro" ]; then
@@ -43,8 +44,10 @@ if [ $IS_SU -eq 0 ]; then
         elif [ "$PLATFORM" == "Arch" ]; then
             bash ./scripts/arch.sh
         else
-            echo "INSTALL SCRIPT FAIL"
+            echo "INSTALL SCRIPT FAILED"
         fi
+    elif [ "$UNAME" == "darwin" ]; then
+        bash ./scripts/macos.sh
     fi
 fi
 

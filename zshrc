@@ -76,15 +76,15 @@ export NVM_LAZY_LOAD=true
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git
-        vi-mode
-        z
-        extract
-        #zsh-syntax-highlighting
-        fast-syntax-highlighting
-        zsh-autosuggestions
-        tmux
-    )
+plugins=(
+    git
+    vi-mode
+    z
+    extract
+    fast-syntax-highlighting
+    zsh-autosuggestions
+    tmux
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -140,8 +140,6 @@ if type pacman >/dev/null 2>&1; then
     alias autoremove="sudo pacman -Rns"
 fi
 
-eval $(thefuck --alias)
-
 # no dumplicate history
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_EXPIRE_DUPS_FIRST
@@ -169,7 +167,5 @@ export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist noma
 
 # add ipython path
 export PATH=$PATH:~/.local/bin
-export PATH=$PATH:$HOME/.spicetify
-export PATH=$PATH:/Users/jiyi/.spicetify
 
-alias ls=exa
+alias ls=eza
