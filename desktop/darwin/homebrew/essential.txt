@@ -18,7 +18,4 @@ spotify
 typora
 vivaldi
 zoom
-zotero
-visual-studio-code
-
-font-fira-code-nerd-font
+karabiner-elements

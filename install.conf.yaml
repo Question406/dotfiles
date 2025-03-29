@@ -34,6 +34,8 @@
     # aerospace
     ~/.aerospace.toml: aerospace.toml
 
+    ~/.config/karabiner: desktop/darwin/karabiner
+
 
 - shell:
    - [bash tmux/install.sh, Installing tmux plugins]

@@ -1,0 +1,58 @@
+{
+  "title": "Launch MacOS apps",
+  "rules": [
+    {
+      "description": "Launch apps by right option+letters.",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open '/Applications/Vivaldi.app'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open ~"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open '/Applications/Alacritty.app'"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
