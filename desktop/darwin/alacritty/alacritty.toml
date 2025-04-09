@@ -1,0 +1,35 @@
+
+[font]
+builtin_box_drawing = true
+size = 13.0
+
+[font.bold]
+family = "FiraCode Nerd Font Mono"
+
+[font.bold_italic]
+family = "FiraCode Nerd Font Mono"
+
+[font.italic]
+family = "FiraCode Nerd Font Mono"
+
+[font.normal]
+family = "FiraCode Nerd Font Mono"
+
+[window]
+decorations = "buttonless"
+#history = 100000
+#multiplier = 3
+opacity = 0.98
+startup_mode = "Windowed"
+
+[window.dimensions]
+columns = 0
+lines = 0
+
+[window.padding]
+x = 12
+y = 10
+
+[general]
+live_config_reload = true
+import = ["~/.config/alacritty/colors.toml"]

@@ -34,6 +34,7 @@
     # aerospace
     ~/.aerospace.toml: aerospace.toml
 
+    ~/.config/alacritty: desktop/darwin/alacritty
     ~/.config/karabiner: desktop/darwin/karabiner
 
 
